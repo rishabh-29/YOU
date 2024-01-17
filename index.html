@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <style>
+    body{
+        background-color: red;
+    }
+    h1{
+        color:white;
+        text-align: center;
+    }
+    #heart { 
+    position: relative; 
+    width: 100px; 
+    height: 90px; 
+} 
+
+    #heart:before, #heart:after { 
+    position: absolute; 
+    content: ""; 
+    left: 50px; 
+    top: 0; 
+    width: 50px; 
+    height: 80px; 
+    background: white; 
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+} 
+    #heart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :100% 100%;
+}    
+    #heart{
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+}
+    
+
+  </style>
+</head>
+<body>
+    <h1>"HEY WHY ARE YOU UPSET"?</h1>
+    <div id="heart"></div>
+    <a href="./happy.html">PRESS THIS TO ENLIGHTEN UR MOOD!!</a>
+</body>
+</html>
